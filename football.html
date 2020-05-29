@@ -19,60 +19,109 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-  <div id="selected_img">
-   <img src="football1.jpg" alt="">
-   </div>
-   <ul id="image_list">
-   <li><img src="football2.jpeg" alt=""></li>
-   <li><img src="football3.jpg" alt=""></li>
+<!---carousel-->
 
-   </ul>
-
-<div class="header">
- <h1>Header</h1>
- <p>some text here blablabla</p>
-</div>
-
-
-<ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+<div class="carousel-wrapper">
+  <div class="carousel">    <img class="carousel__photo initial" src="football1.jpg">
+    <img class="carousel__photo" src="football2.jpeg">
+    <img class="carousel__photo" src="football3.jpg">
     
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="practical-tab" data-toggle="tab" href="#practical" role="tab" aria-controls="practical" aria-selected="false">Practical</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-  </li>  
-</ul>
-
-
-
-
-<div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-    text here
-  </div>
-  
-  
-  
-  <div class="tab-pane fade" id="practical" role="tabpanel" aria-labelledby="Practical-tab">
-    practical info here
-  </div>
-  
-  
-  
-  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-    contact form here
-  </div>
-  
-  
+    <div class="carousel__button--next"></div>
+    <div class="carousel__button--prev"></div>  </div>
 </div>
 
+<!---header-->
+  <div class="header">
+    <h1>Header</h1>
+    <p>some text here blablabla</p>
+  </div>
+
+<!---tabs-->
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="practical-tab" data-toggle="tab" href="#practical" role="tab" aria-controls="practical" aria-selected="false">Practical</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+    </li>
+  </ul>
 
 
-<script src="scripts/script.js"></script>
+<!---home-container-->
+
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <section class="grid-container container-fluid text-center">
+        <section class="row m-sm-4">
+          <section class="grid-item col-sm card  mr-sm-3 mb-sm-2 shadow">
+            <i class="fas fa-building card-img-top text-center mt-sm-5 mb-sm-3"></i>
+            <div class="card-body">
+              <h4 class="card-title">Home</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              </p>
+
+
+            </div>
+    </div>
+
+<!---practical-container-->
+
+    <div class="tab-pane fade" id="practical" role="tabpanel" aria-labelledby="Practical-tab">
+      <section class="grid-container container-fluid text-center">
+        <section class="row m-sm-4">
+          <section class="grid-item col-sm card  mr-sm-3 mb-sm-2 shadow">
+            <i class="fas fa-building card-img-top text-center mt-sm-5 mb-sm-3"></i>
+            <div class="card-body">
+              <h4 class="card-title">Practical</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              </p>
+
+
+            </div>
+    </div>
+
+<!---contact-container-->
+
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+      <section class="grid-container container-fluid text-center">
+        <section class="row m-sm-4">
+          <section class="grid-item col-sm card  mr-sm-3 mb-sm-2 shadow">
+            <i class="fas fa-building card-img-top text-center mt-sm-5 mb-sm-3"></i>
+            <div class="card-body">
+              <h4 class="card-title">Contact</h4>
+              <form>
+                <div class="form-group">
+                  <label for="formGroupfirstname">First Name</label>
+                  <input type="text" class="form-control" id="firstname" placeholder="firstname">
+                </div>
+
+                <div class="form-group">
+                  <label for="formGrouplastname">Last name</label>
+                  <input type="text" class="form-control" id="lastname" placeholder="last name">
+                </div>
+
+                <div class="form-group">
+                  <label for="formGroupemail">E-mail</label>
+                  <input type="text" class="form-control" id="e-mail" placeholder="E-mail">
+                </div>
+              </form>
+              <button type="button" class="btn btn-primary">Submit</button>
+
+
+
+            </div>
+    </div>
+
+
+  </div>
+
+
+
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>
