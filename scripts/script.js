@@ -1,9 +1,3 @@
-
-//onload="visitorsCounter()";
-
-
-//document.getElementById("visitorsCounter").addEventListener("load", visitorsCounter);
-
 let startNumber = 0;
 const totalVisitors = 50000;
 let totalGoals = 20;
