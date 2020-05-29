@@ -81,3 +81,22 @@
   color: black;
   font-size: 20px;
 }
+
+
+.nav-tabs {
+    justify-content: center;
+}
+
+.card-body {
+  text-align: center;
+
+
+}
+
+.card-title {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: lightblue;
+}
