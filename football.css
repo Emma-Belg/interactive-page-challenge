@@ -1,4 +1,6 @@
-*{box-sizing:border-box}
+* {
+  box-sizing: border-box
+}
 
 .carousel-wrapper {
   overflow: hidden;
@@ -16,7 +18,7 @@
 .carousel__photo {
   opacity: 0;
   position: absolute;
-  top:0;
+  top: 0;
   width: 100%;
   margin: auto;
   padding: 1rem 4rem;
@@ -34,29 +36,42 @@
 .carousel__photo.prev,
 .carousel__photo.next {
   z-index: 800;
-}.carousel__photo.prev {
-  transform: translateX(-100%); /* Move 'prev' item to the left */
-}.carousel__photo.next {
-  transform: translateX(100%); /* Move 'next' item to the right */
+}
+
+.carousel__photo.prev {
+  transform: translateX(-100%);
+  /* Move 'prev' item to the left */
+}
+
+.carousel__photo.next {
+  transform: translateX(100%);
+  /* Move 'next' item to the right */
 }
 
 .carousel__button--prev,
 .carousel__button--next {
   position: absolute;
-  top:50%;
+  top: 50%;
   width: 3rem;
   height: 3rem;
   background-color: #FFF;
   transform: translateY(-50%);
   border-radius: 50%;
   cursor: pointer;
-  z-index: 1001; /* Sit on top of everything */
+  z-index: 1001;
+  /* Sit on top of everything */
   border: 1px solid black;
-}.carousel__button--prev {
-  left:0;
-}.carousel__button--next {
-  right:0;
-}.carousel__button--prev::after,
+}
+
+.carousel__button--prev {
+  left: 0;
+}
+
+.carousel__button--next {
+  right: 0;
+}
+
+.carousel__button--prev::after,
 .carousel__button--next::after {
   content: " ";
   position: absolute;
@@ -67,12 +82,12 @@
   border-right: 2px solid black;
   border-bottom: 2px solid black;
   transform: translate(-50%, -50%) rotate(135deg);
-}.carousel__button--next::after {
+}
+
+.carousel__button--next::after {
   left: 47%;
   transform: translate(-50%, -50%) rotate(-45deg);
 }
-
-
 
 .header {
   padding: 10px;
@@ -80,17 +95,15 @@
   background: lightgray;
   color: black;
   font-size: 20px;
+  font-family: sans-serif;
 }
 
-
 .nav-tabs {
-    justify-content: center;
+  justify-content: center;
 }
 
 .card-body {
   text-align: center;
-
-
 }
 
 .card-title {
