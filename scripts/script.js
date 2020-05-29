@@ -46,8 +46,18 @@ function disableFormSend() {
 
 }
 
-
 //https://stackoverflow.com/questions/20040825/check-how-many-li-there-are-in-a-ul-with-javascript
 function imageSlider() {
-
+    let selectedImg = document.getElementById('selected_img');
+    let images = document.getElementById('image_list').getElementsByTagName('li');for (i = 0; i < images.length; i++)
+    {
+        images[i].addEventListener('click', activateImage);
+    }function activateImage()
+    {
+        selectedImg.innerHTML = this.innerHTML;
+    }
 }
+
+
+
+

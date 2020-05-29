@@ -1,0 +1,34 @@
+*{box-sizing:border-box}
+
+#selected_img
+ {
+ max-width: 800px;
+ width: 100%;
+ height: auto;
+ margin: 0 auto;
+ }
+ #selected_img img
+ {
+ width: 100%;
+ height: auto;
+ }
+ #image_list li
+ {
+ width: 30%;
+ display: inline-block;
+ max-height: 250px;
+ }
+ #image_list li img
+ {
+ width: 100%;
+ height: auto;
+ }
+
+
+.header {
+  padding: 10px;
+  text-align: center;
+  background: lightgray;
+  color: black;
+  font-size: 20px;
+}
