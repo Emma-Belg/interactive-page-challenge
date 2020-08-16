@@ -43,7 +43,6 @@ function getElements() {
     document.getElementById('home');
     document.getElementById('practical');
     document.getElementById('contact');
-
 }
 
 function tabThrough(id) {
@@ -67,16 +66,17 @@ function tabContact() {
     }
 }
 
-
 //document.getElementById('home').addEventListener("click", tabThrough('home'));
-document.getElementById('practical').addEventListener("click", tabThrough('practical'));
+    document.querySelector('#practical').addEventListener('click',
+        function(){console.log("HELLOOOOOO")}, true);
+document.getElementById("button").addEventListener("click", function(){
+    console.log("HELLOOOOOO")});
 //document.getElementById('contact').addEventListener("click", tabContact);
 
 document.getElementById("contact").addEventListener("click", contactTab);
 
 function contactTab() {
     //I don't know why it doesnt remove
-    //yeah it is in the google sheets
     document.getElementById("contact").classList.remove('hide');
     document.getElementById("contact").classList.remove('d-none');
     document.getElementById("contact").classList.add('show');
